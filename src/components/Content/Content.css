@@ -1,0 +1,144 @@
+.content {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+
+    font-family: "Bungee";
+} 
+
+.img-dishes {
+    width: 85%;
+    height: 80%;
+    min-width: 250px;
+    min-height: 300px;
+}
+
+.bg-table {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/vectores/VEC_FONDO_MESA.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-food-container {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.bg-food-top {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    min-height: 140px;
+
+    background-image: url(../../assets/vectores/VEC_FRAME_pt1.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-food-line-top {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    background-image: url(../../assets/vectores/VEC_FRAME_pt2.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bg-food-line-bottom {
+    position: absolute;
+    bottom: -1;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    background-image: url(../../assets/vectores/VEC_FRAME_pt2.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bg-food-bottom {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 25%;
+    min-height: 140px;
+
+    background-image: url(../../assets/vectores/VEC_FRAME_pt3.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-food-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.bg-food-textInfo {
+    color: #428E31;
+    font-size: 2rem;
+}
+
+.bg-food-text {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.bg-food-message {
+   display: flex;
+   justify-content: center;
+
+   margin-top: 10px;
+}
+
+.bg-food-message-text{
+    width: 60%;
+    font-size: 1rem;
+}
+
+.bg-food-containerText {
+    position: relative;
+    width: 100%;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+}
+
+.welcome-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    color: #428E31;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.imgPyramid {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,10 @@
+#options {
+    position: absolute;
+    width: 160px;
+    height: 100%;
+}
+
+.options-container {
+    position: relative;
+    height: 98%;
+}

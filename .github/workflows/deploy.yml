@@ -1,0 +1,38 @@
+name: Release
+
+on: 
+  push:
+    tags:
+    - '*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [15.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install --legacy-peer-deps
+
+    - name: Build
+      run: CI= npm run build
+
+    - name: Build package
+      run: CI= npm run package-scorm
+
+    - name: Release package
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "scorm_packages/*.zip"
+        token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}

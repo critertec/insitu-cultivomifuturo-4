@@ -1,0 +1,51 @@
+#header-container {
+    width: 100%;
+    min-height: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    border-left-color: 24px solid var(--azul-secd);
+    border-right-color: 24px solid var(--azul-secd);
+    
+    font-family: "Bungee";
+
+    position: relative;
+    z-index: 50;
+}
+
+#header-icons-info {
+    height: 100%;
+    width: 20%;
+    margin-left: 20px;
+    /* min-width: 140px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_icon {
+    width: 30%;
+    height: 40px;
+    min-width: 20px;
+    max-width: 40px;
+    cursor: pointer;
+    
+}
+
+#header-icons-menu {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#header-puntaje {
+    width: 60%;
+}
+
+#header-puntaje .text {
+    font-size: 12px;
+}

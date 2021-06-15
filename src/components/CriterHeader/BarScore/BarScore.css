@@ -1,0 +1,40 @@
+#bar-container {
+    width: 100%;
+    font-weight: bold;
+}
+
+#bar-container .bar {
+    width: 100%;
+    border-radius: 10px;
+    height: 15px;
+    border: 1px solid #5e77a3;
+    background-color: var(--azul-secd);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+#bar-container .bar-fill {
+    /* width: 60%; */
+    border-radius: 10px;
+    /* border-top-right-radius: 0; */
+    /* border-bottom-right-radius: 0; */
+    height: 13px;
+    background-color: var(--verde-ppal);
+} 
+
+#bar-container .title {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#bar-container .text {
+    font-size: 15px;
+    color: white;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}

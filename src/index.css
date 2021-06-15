@@ -1,0 +1,229 @@
+:root {
+  --header-height: 55px;
+  /* --header-margin: 16px; */
+  --question-width: 60%;
+  --question-min-width: 360px;
+  --min-width: 360px;
+  --feedback-width: 50%;
+
+  --verde-ppal: #80ae3c;
+  --verde-secd: #4b7312;
+  --azul-psjes: #24244e;
+  --cafe-secd: #4b0f13;
+  --rojo-secd: #e6333e;
+  --cyan-secd: #3bc7ed;
+  --aqua-secd: #2cbdbd;
+  --azul-secd: #121c33;
+}
+
+@font-face {
+  font-family: 'Bungee';
+  src: local('Bungee'), url(./assets/fuentes/Bungee-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./assets/fuentes/Roboto-Bold.ttf) format('opentype');
+  font-weight: 'bold'
+  /* src: local('Roboto'), url(./assets/fuentes/Roboto-Regular_0.ttf) format('opentype'); */
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: local('Roboto'), url(./assets/fuentes/Roboto-Regular_0.ttf) format('opentype');
+  font-weight: 'normal'
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--azul-secd);
+  font-family: 'Roboto';
+}
+
+.game {
+  height: 100%;
+  width: 40%;
+  min-width: 360px;
+}
+
+.container-game {
+  width: 100%;
+  height: 100%;
+  min-width: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .container-game.small {
+  height: 70%;
+} */
+
+.box-game {
+  /* width: 90%;
+  height: 70%; */
+  display: flex;
+  height: 70%;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+  /* height: 100vh; */
+  width: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+  .personage img {
+    height: 40vh;
+  }
+
+  .boxTalk-container {
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content.intro {
+    width: 100%;
+  }
+
+  #options {
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  .container-game {
+    height: 70%;
+  }
+  .content {
+    width: 70%;
+  }
+  #feedback {
+    height: 30%;
+  }
+
+  /* .feedback-container {
+    height: 100%;
+    top:0;
+  } */
+
+
+  .footer {
+    height: auto;
+    font-size: 12px;
+  }
+
+  .options-container {
+    width: 30%;
+  }
+
+  .titulo-comida {
+    font-size: 10px;
+  }
+
+  .boxTalk-feedback {
+    width: 200px;
+    /* font-size: 10px; */
+    padding: 10px;
+  }
+
+  .boxTalk-question {
+    width: 200px;
+    /* font-size: 10px; */
+    padding: 10px;
+  }
+
+  .boxTalk-fl.left {
+    width: 0; 
+    height: 0; 
+
+    /* border: 40px solid white; */
+    border-right: 12px solid transparent;
+    border-top: 12px solid white;
+    border-left: 12px solid white;
+    border-bottom: 12px solid transparent;
+  }
+
+  .boxTalk-fl.right {
+      width: 0; 
+      height: 0; 
+
+      /* border: 40px solid white; */
+      border-left: 12px solid transparent;
+      border-top: 12px solid white;
+      border-right: 12px solid white;
+      border-bottom: 12px solid transparent;
+  }
+} 
+
+@media only screen and (max-width: 800px) {
+  .personage img {
+    height: 30vh;
+  }
+
+  .boxTalk-container {
+    height: 72%;
+  }
+
+  .boxTalk-feedback {
+    width: 150px;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .boxTalk-question {
+    width: 150px;
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .personage img {
+    height: 22vh;
+  }
+
+  .boxTalk-container {
+    height: 90%;
+  }
+
+  .boxTalk-feedback {
+    width: 120px;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .boxTalk-question {
+    width: 120px;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+    .boxTalk-container.left {
+    position: relative;
+    left: 100px;
+  }
+
+  .boxTalk-container.right {
+    position: relative;
+    right: 100px;
+  }
+}

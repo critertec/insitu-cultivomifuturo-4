@@ -1,0 +1,137 @@
+.boxTalk-container {
+    position: absolute;
+    height: 50%;
+    /* width: 200px; */
+    z-index: 8000;
+    /* top: -350px; */
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.boxTalk-question {
+    /* position: absolute; */
+    margin-left: 10px;
+    
+    width: 260px;
+
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    z-index: 1;
+    
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #80AE3C;
+    color: white;
+    box-shadow: 3px 3px 2px 2px #0E1626;
+}
+
+.boxTalk-feedback {
+    margin-left: 10px;
+    width: 260px;
+
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 20px;
+    padding-bottom: 1px;
+
+    z-index: 1;
+    
+    font-size: 14px;
+    background-color: #EAE1CE;
+    color: #444469;
+    box-shadow: 3px 3px 2px 2px #0E1626;
+    cursor: pointer;
+}
+
+.boxTalk-feedback .titulo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boxTalk-feedback .titulo {
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 16px;
+    width: 90%;
+}
+
+.boxTalk-feedback .text-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boxTalk-feedback .text-container .text {
+    width: 90%;
+    text-align: justify;
+    line-height: 1;
+}
+
+.boxTalk-feedback .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.boxTalk-feedback .btn-container .btn {
+    width: 100px;
+    border-radius: 20px;
+    background-color: white;
+    color: #84A63C;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.boxTalk-feedback .btn-container .btn .fl {
+    margin-left: 8px;
+    margin-top: 2px;
+    position: absolute;
+    width: 0; 
+    height: 0;
+
+    border-left: 6px solid black;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+
+.boxTalk-fl-container.left {
+    width: auto;
+    padding-right: 20px;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.boxTalk-fl-container.right {
+    width: auto;
+    padding-left: 20px;
+    display: flex; 
+    justify-content: flex-start;
+}
+
+.boxTalk-fl.left {
+    width: 0; 
+    height: 0; 
+
+    /* border: 40px solid white; */
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    border-left: 20px solid white;
+    border-bottom: 20px solid transparent;
+}
+
+.boxTalk-fl.right {
+    width: 0; 
+    height: 0; 
+
+    /* border: 40px solid white; */
+    border-left: 20px solid transparent;
+    border-top: 20px solid white;
+    border-right: 20px solid white;
+    border-bottom: 20px solid transparent;
+}
