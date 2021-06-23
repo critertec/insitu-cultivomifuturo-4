@@ -17,7 +17,7 @@ export default [
     },
     {
         personaje: 'luisa',
-        text: 'Hagámosle Yeiner. Invitemos a nuestros seguidores a que envíen fotos de lo que están almorzando. Así podemos ver si es comida saludable. '
+        text: 'Hagámosle Andrés. Invitemos a nuestros seguidores a que envíen fotos de lo que están almorzando. Así podemos ver si es comida saludable. '
     },
     {
         personaje: 'yeiner',
