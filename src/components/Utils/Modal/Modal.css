@@ -30,9 +30,9 @@
 .close {
     position: absolute;
     right: 10px;
-    color: #aaaaaa;
+    color: #84A63C;
     float: right;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     z-index: 1;
 }

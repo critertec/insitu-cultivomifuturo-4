@@ -184,9 +184,10 @@ body {
   }
 
   .boxTalk-feedback {
-    width: 150px;
-    font-size: 12px;
+    width: 350px;
+    font-size: 17px;
     padding: 10px;
+    font-family: 'Roboto'
   }
 
   .boxTalk-question {

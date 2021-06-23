@@ -48,7 +48,7 @@ export default ({ smallWidth, comida, estado })=> {
             <BackgroundFood>
                 <div className="welcome-content">
                     <div>
-                        ALIMENTACION SALUDABLE
+                        ALIMENTACIÓN SALUDABLE
                     </div>
                 </div>
             </BackgroundFood>

@@ -22,7 +22,7 @@ export default ({}) => {
                         />
                     </div>
                     <div className="intro-title">
-                        Alimentacion Saludable
+                        Alimentación Saludable
                     </div>
 
                     <div className="intro">
